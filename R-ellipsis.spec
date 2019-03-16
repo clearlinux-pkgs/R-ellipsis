@@ -4,7 +4,7 @@
 #
 Name     : R-ellipsis
 Version  : 0.1.0
-Release  : 4
+Release  : 5
 URL      : https://cran.r-project.org/src/contrib/ellipsis_0.1.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ellipsis_0.1.0.tar.gz
 Summary  : Tools for Working with ...
@@ -37,10 +37,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550623248
+export SOURCE_DATE_EPOCH=1552753590
 
 %install
-export SOURCE_DATE_EPOCH=1550623248
+export SOURCE_DATE_EPOCH=1552753590
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -76,8 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library ellipsis|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  ellipsis || :
 
 
 %files
@@ -102,10 +101,11 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/ellipsis/help/paths.rds
 /usr/lib64/R/library/ellipsis/html/00Index.html
 /usr/lib64/R/library/ellipsis/html/R.css
-/usr/lib64/R/library/ellipsis/libs/symbols.rds
+/usr/lib64/R/library/ellipsis/tests/testthat.R
+/usr/lib64/R/library/ellipsis/tests/testthat/test-check.R
+/usr/lib64/R/library/ellipsis/tests/testthat/test-dots.R
+/usr/lib64/R/library/ellipsis/tests/testthat/test-safe.R
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/ellipsis/libs/ellipsis.so
-/usr/lib64/R/library/ellipsis/libs/ellipsis.so.avx2
-/usr/lib64/R/library/ellipsis/libs/ellipsis.so.avx512

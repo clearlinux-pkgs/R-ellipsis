@@ -4,7 +4,7 @@
 #
 Name     : R-ellipsis
 Version  : 0.1.0
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/ellipsis_0.1.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ellipsis_0.1.0.tar.gz
 Summary  : Tools for Working with ...

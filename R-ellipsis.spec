@@ -4,7 +4,7 @@
 #
 Name     : R-ellipsis
 Version  : 0.3.0
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/ellipsis_0.3.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ellipsis_0.3.0.tar.gz
 Summary  : Tools for Working with ...
@@ -14,6 +14,7 @@ Requires: R-ellipsis-lib = %{version}-%{release}
 Requires: R-rlang
 BuildRequires : R-rlang
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 # ellipsis
@@ -44,10 +45,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569257643
+export SOURCE_DATE_EPOCH=1571823206
 
 %install
-export SOURCE_DATE_EPOCH=1569257643
+export SOURCE_DATE_EPOCH=1571823206
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

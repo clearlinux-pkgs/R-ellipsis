@@ -1,5 +1,9 @@
 # This file contains recursive sources that require this package
 R-devtools
+R-dplyr
 R-forcats
+R-testthat
+R-tibble
 R-tidyr
+R-tidyselect
 R-vctrs

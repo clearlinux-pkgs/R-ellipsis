@@ -1,7 +1,17 @@
 # This file contains recursive sources that require this package
+R-broom
+R-dbplyr
 R-devtools
 R-dplyr
+R-dtplyr
 R-forcats
+R-furrr
+R-hms
+R-pillar
+R-recipes
+R-rsample
+R-shiny
+R-slider
 R-testthat
 R-tibble
 R-tidyr

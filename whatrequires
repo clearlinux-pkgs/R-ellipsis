@@ -2,11 +2,13 @@
 R-broom
 R-dbplyr
 R-devtools
+R-distributional
 R-dplyr
 R-dtplyr
 R-forcats
 R-furrr
 R-hms
+R-keras
 R-pillar
 R-recipes
 R-rsample
